@@ -73,7 +73,6 @@
     }
 
     p {
-        font-size: var(--font-p-text-1);
         line-height: 130%;
         color: var(--text-color-3);
     }
@@ -134,7 +133,6 @@
     }
     
     p {
-        font-size: var(--font-p-text-1);
         line-height: 130%;
         
         color: var(--text-color-3);
@@ -153,7 +151,7 @@
     column-gap: 1.3rem;
     width: 16.7rem;
     p {
-        font-size: var(--font-p-text-2);
+        font-size: clamp(1.5rem, 5vw, var(--font-p-text-2));
         line-height: 130%;
         color: #5678CE;
     }

@@ -41,7 +41,7 @@
     }
 
     p {
-        font-size: var(--font-p-text-1);
+        font-size: clamp(1.5rem, 5vw, var(--font-p-text-2));;
         line-height: 130%;
         width: 47.4rem;
         color: var(--text-color-2);

@@ -15,7 +15,7 @@
 		padding-right: 1rem;
 
 		p {
-			font-size: var(--font-p-text-2);
+			font-size: clamp(1.5rem, 5vw, var(--font-p-text-2));
 			line-height: 130%;
 			color: var(--text-color-5);
 		}
