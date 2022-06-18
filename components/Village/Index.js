@@ -27,7 +27,12 @@ const Village = () => {
               <p>Contribution Progress</p>
               <p>10% control of Eziama village</p>
             </div>
-            <Progress done={10} pgColor="#CE9E56" bgColor="#FAF1E4" type="village"/>
+            <Progress
+              done={10}
+              pgColor="#CE9E56"
+              bgColor="#FAF1E4"
+              type="village"
+            />
             <div className={styles.prog_percent}>
               <p>10%</p>
               <p>100%</p>
@@ -100,7 +105,7 @@ const Village = () => {
             />
           </div>
         </div>
-        <div className={styles.voted_guaranteed}>
+        <div className={styles.votes_guaranteed}>
           <h2>Vote Guaranteed</h2>
           <p>These are the votes quaranteed in this village</p>
           <div className={styles.contributors}>
