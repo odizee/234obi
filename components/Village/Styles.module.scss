@@ -151,8 +151,12 @@
     column-gap: 1.3rem;
     width: 16.7rem;
     p {
-        font-size: clamp(1.5rem, 5vw, var(--font-p-text-2));
+        font-size: var(--font-p-text-2);
         line-height: 130%;
         color: #5678CE;
+
+        @media (max-width: 26.43em) {
+                    font-size: 1.7rem;
+                }
     }
 }

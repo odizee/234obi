@@ -1,5 +1,5 @@
-import State from '../components/State/Index';
 import { useRouter } from 'next/router';
+import State from '../../components/State/Index';
 
 const state = () => {
   const router = useRouter();

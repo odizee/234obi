@@ -82,8 +82,10 @@ h5 {
 }
 
 p {
-  font-size: clamp(2rem, 5vw, var(--font-p-text-1)) !important;
-
+  font-size: var(--font-p-text-1);
+     @media (max-width: 26.43em) {
+        font-size: 2rem;
+      }
 }
 
 button {
