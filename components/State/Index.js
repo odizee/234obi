@@ -80,7 +80,13 @@ const State = ({ id }) => {
             </div>
           </div>
           <div className={styles.state_body_cards}>
-            <Card type="contributor" />
+            <Card
+              type="contributor"
+              progress={10}
+              voteControl={20}
+              state="Ezenwa village"
+              slug="/Ezenwa"
+            />
             <Card type="contributor" />
             <Card type="contributor" />
             <Card type="contributor" />

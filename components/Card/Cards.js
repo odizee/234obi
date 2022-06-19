@@ -3,16 +3,18 @@ import Card from './Card';
 import Link from 'next/link';
 
 const Cards = ({ slug }) => {
+  const state = 'Abia State';
   return (
     <div className={styles.cards}>
-      <Link href={``}>
-        <Card
-          state={'Abia State'}
-          progress={10}
-          voteControl={20}
-          type="control"
-        />
-      </Link>
+      {/* <Link href={`/${state}`}> */}
+      <Card
+        progress={10}
+        voteControl={20}
+        type="control"
+        state={state}
+        slug={`/${state}`}
+      />
+      {/* </Link> */}
 
       <Card
         state={'Adamawa State'}

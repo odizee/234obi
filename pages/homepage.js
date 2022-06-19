@@ -4,9 +4,14 @@ import labourparty from '../assets/labourparty.png';
 import ProgressBar from './../components/misc/Progress';
 import States from '../components/States/Index';
 import SupportGroups from '../components/SupportGroups/Index';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const homepage = () => {
   const done = 13;
+
+  const router = useRouter();
+  const query = router.query;
 
   return (
     <div className={styles.homepage}>

@@ -4,15 +4,18 @@ import StateProgress from '../misc/StateProgress';
 import Link from 'next/link';
 
 const Card = ({ state, progress, voteControl, type }) => {
-  const slug = state?.split(' ').slice(0, -1).join(' ').toLowerCase();
-
+  const stateSlug = state?.split(' ').slice(0, -1).join(' ').toLowerCase();
   return (
     <div className={styles.card}>
       <div className={styles.state}>
         <h5>{state}</h5>
-        <div className={styles.chevron}>
-          <BsChevronRight />
-        </div>
+        <Link
+          href={type === 'control' ? `${stateSlug}` : `${stateSlug}/ezenzwa`}
+        >
+          <div className={styles.chevron}>
+            <BsChevronRight />
+          </div>
+        </Link>
       </div>
       <div className={styles.progress}>
         <p>Progress</p>
