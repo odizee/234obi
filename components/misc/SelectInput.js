@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SelectInput = ({ option, name, value, onChange }) => {
   return (
     <div>
-      <div class={styles.input}>
+      {/* <div class={styles.input}>
         <select name={name} value={value} onChange={onChange}>
           <option selected disabled>
             {option}
@@ -18,7 +18,8 @@ const SelectInput = ({ option, name, value, onChange }) => {
         <div className={styles.img}>
           <Image src={caret_down} />
         </div>
-      </div>
+      </div> */}
+      
     </div>
   );
 };
